@@ -13,7 +13,7 @@ const Header = () => {
         <Link to={"/"} className="max-w-[200px]">
           <img src={Logo} alt="logo" />
         </Link>
-        <nav className="hidden lg:flex gap-x-12 font-semibold">
+        <nav className="hidden xl:flex gap-x-12 font-semibold">
           <Link
             to={"/"}
             className="text-[#696c6d] hover:text-primary transition"
