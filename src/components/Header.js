@@ -14,32 +14,44 @@ const Header = () => {
           <img src={Logo} alt="logo" />
         </Link>
         <nav className="hidden xl:flex gap-x-12 font-semibold">
-          <Link
-            to={"/"}
-            className="text-[#696c6d] hover:text-primary transition"
-          >
-            Home
-          </Link>
-          <Link
-            to={"/about"}
-            className="text-[#696c6d] hover:text-primary transition"
-          >
-            About
-          </Link>
-          <Link
-            to={"/portfolio"}
-            className="text-[#696c6d] hover:text-primary transition"
-          >
-            Portfolio
-          </Link>
-          <Link
-            to={"/contact"}
-            className="text-[#696c6d] hover:text-primary transition"
-          >
-            Contact
-          </Link>
+          <ul>
+            <li>
+              <Link
+                to={"/"}
+                className="text-[#696c6d] hover:text-primary transition"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link
+                to={"/about"}
+                className="text-[#696c6d] hover:text-primary transition"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link
+                to={"/portfolio"}
+                className="text-[#696c6d] hover:text-primary transition"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/contact"}
+                className="text-[#696c6d] hover:text-primary transition"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
         </nav>
-      </div>{" "}
+      </div>
       <Socials />
       <MobileNav />
     </header>
