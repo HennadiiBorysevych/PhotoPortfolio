@@ -1,13 +1,14 @@
-import React from "react";
-
+import React,{useContext} from "react";
+//import images
 import Image1 from "../img/portfolio/1.png";
 import Image2 from "../img/portfolio/2.png";
 import Image3 from "../img/portfolio/3.png";
 import Image4 from "../img/portfolio/4.png";
-
+//import motion
 import { motion } from "framer-motion";
+//import transition
 import { transition1 } from "../transitions";
-
+//import link
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
