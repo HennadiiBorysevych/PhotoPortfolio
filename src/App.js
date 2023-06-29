@@ -14,17 +14,17 @@ const App = () => {
   const { cursorVariants, cursorBG } = useContext(CursorContext);
   return (
     <>
-        <BrowserRouter>
-          <Header />
-          <AnimRoutes />
-        </BrowserRouter>
-        {/* cursor */}
-        <motion.div
-          variants={cursorVariants}
-          animate={cursorBG}
-          className="w-[32px] h-[32px] bg-primary fixed top-0 left-0 
+      <BrowserRouter>
+        <Header />
+        <AnimRoutes />
+      </BrowserRouter>
+      {/* cursor */}
+      <motion.div
+        variants={cursorVariants}
+        animate={cursorBG}
+        className="w-[32px] h-[32px] bg-primary fixed top-0 left-0 
           pointer-events-none z-50 rounded-full"
-        ></motion.div>
+      ></motion.div>
     </>
   );
 };
