@@ -5,21 +5,27 @@ const CursorContext = createContext();
 const CursorProvider = ({ children }) => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
+  const mobileViewPort = window.innerWidth < 768;
+
   //cursor bg state
   const [cursorBG, setCursorBG] = useState("default");
 
   useEffect(() => {
-    const move = (e) => {
-      setCursorPos({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    window.addEventListener("mouseleave", move);
+    if (!mobileViewPort) {
+      const move = (e) => {
+        setCursorPos({
+          x: e.clientX,
+          y: e.clientY,
+        });
+      };
+      window.addEventListener("mouseleave", move);
 
-    return () => {
-      window.removeEventListener("mousemove", move);
-    };
+      return () => {
+        window.removeEventListener("mousemove", move);
+      };
+    } else {
+      setCursorBG("none");
+    }
   });
   const cursorVariants = {
     default: {
@@ -35,6 +41,11 @@ const CursorProvider = ({ children }) => {
       backgroundColor: "fff",
       mixBlendMode: "difference",
     },
+    none: {
+      width: 0,
+      height: 0,
+      backgroundColor: "rgba(255,255,255,1)",
+    },
   };
 
   //mouse enter handler
@@ -43,7 +54,6 @@ const CursorProvider = ({ children }) => {
   };
 
   //mouse leave handler
-
   const mouseLeaveHandler = () => {
     setCursorBG("default");
   };
