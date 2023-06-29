@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
 
-const CursorContext = createContext();
+export const CursorContext = createContext();
 
 const CursorProvider = ({ children }) => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
@@ -18,7 +18,7 @@ const CursorProvider = ({ children }) => {
           y: e.clientY,
         });
       };
-      window.addEventListener("mouseleave", move);
+      window.addEventListener("mousemove", move);
 
       return () => {
         window.removeEventListener("mousemove", move);
@@ -26,7 +26,8 @@ const CursorProvider = ({ children }) => {
     } else {
       setCursorBG("none");
     }
-  });
+  },[]);
+
   const cursorVariants = {
     default: {
       x: cursorPos.x - 16,
@@ -38,7 +39,7 @@ const CursorProvider = ({ children }) => {
       height: "150px",
       x: cursorPos.x - 72,
       y: cursorPos.y - 72,
-      backgroundColor: "fff",
+      backgroundColor: "#fff",
       mixBlendMode: "difference",
     },
     none: {

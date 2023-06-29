@@ -28,7 +28,6 @@ const Contact = () => {
             transition={transition1}
             className="hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 right-0 top-72 -z-10"
           >
-            bg
           </motion.div>
           {/* text & form */}
           <div
@@ -59,7 +58,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Your massage"
               />
-              <button className="btn mb-[30px] mx-auto lg:mx-0 self-start"></button>
+              <button className="btn mb-[30px] mx-auto lg:mx-0 self-start">Send it</button>
             </form>
           </div>
           {/* image */}
