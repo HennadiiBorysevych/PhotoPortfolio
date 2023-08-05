@@ -13,8 +13,6 @@
     <li><a href="#features">Features</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#support">Support and Feedback</a></li>
-    <li><a href="#license">License</a></li>
   </ol>
 
   <h2 id="introduction">1. Introduction</h2>
