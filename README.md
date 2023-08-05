@@ -51,18 +51,5 @@
     <li>Configure Settings</li>
     <li>Preview and Publish</li>
   </ol>
-  <p>
-    Remember to regularly update your portfolio with new photographs and make adjustments to keep it fresh and engaging for your visitors.
-  </p>
-
-  <h2 id="support">5. Support and Feedback</h2>
-  <p>
-    If you encounter any issues or have questions about PhotoPortfolio Photographer, please refer to the documentation and FAQ section on our website. If you need further assistance, you can reach out to our support team at support@photoportfolio.com. We welcome any feedback or suggestions for improving our application.
-  </p>
-
-  <h2 id="license">6. License</h2>
-  <p>
-    PhotoPortfolio Photographer is licensed under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</a>. Please review the license terms before using the application.
-  </p>
 </body>
 </html>
